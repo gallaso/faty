@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DE TENIS</title>
+    <style>
+        body {
+            font-family: H1;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url:"C:\Users\Alumno\Downloads\descarga.png"
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color:pink;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .moving-title {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation: moveTitle 10s linear infinite;
+        }
+
+        @keyframes moveTitle {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .menu {
+            background-color: #f4ecf7;
+            overflow: hidden;
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: red;
+            color: black;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .logo img {
+            width: 40%;
+            height: auto;
+        }
+
+        .productos {
+            margin: 20px;
+        }
+
+        .producto {
+            background-color: #f4ecf7;
+            border: 1px solid #fcf3cf;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 40%;
+            height: auto;
+            border-radius: 1px;
+        }
+
+        .producto p {
+            font-size: 18px;
+            color: blue;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .cta button {
+            background-color: #fdf2e9;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cta button:hover {
+            background-color: #ff9900;
+        }
+
+        .footer {
+            background-color: #f6ddcc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .formulario {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .formulario input, .formulario textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .formulario button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .formulario button:hover {
+            background-color: #ff9900;
+        }
+
+        .links {
+            margin: 20px;
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin: 10px 0;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .tabla-productos {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .tabla-productos table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabla-productos td, .tabla-productos th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .tabla-productos img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .tabla-productos ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .tabla-productos li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="moving-title">venta de tenis</h1>
+    </header>
+    <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <div class="logo">
+        <img src="https://media.istockphoto.com/id/1212219150/es/vector/s%C3%ADmbolo-del-coraz%C3%B3n-de-la-zapatilla-de-running-en-el-tel%C3%B3n-de-fondo-blanco.jpg?s=612x612&w=0&k=20&c=2p8INOE-4z0DKDpFjv7NDR_u7iPs9UF1xX89IcpXiWU=" alt="Logo">
+    </div>
+    <section class="productos" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="producto">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f61c9332-22d1-4e60-b7e9-b874c106be8a/WMNS+NIKE+AIR+MAX+SC.png" alt="tenis 1">
+            <p>tenis modernos $2800</p>
+        </div>
+        <div class="producto">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_793879-MLM77325741951_062024-F.webp" alt="tenis  2">
+            <p>tenis para que veas linda $2506</p>
+        </div>
+        <div class="producto">
+            <img src="https://m.media-amazon.com/images/I/716n8BFM0fL._AC_SX500_.jpg" alt="tenis 3">
+            <p>2500</p>tenis $2800
+        </div>
+        <div class="producto">
+            <img src="https://resources.claroshop.com/medios-plazavip/mkt/6334774a7b8b0_dj6257600-1jpg.jpg" alt="tenis  4">
+            <p>tenis $500</p>
+        </div>
+    </section>
+    <div class="cta">
+        <button>¡Compra Ahora!</button>
+    </div>
+    <div class="formulario" id="contacto">
+        <h2>Contacto</h2>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button>Enviar</button>
+    </div>
+    <section class="links" id="links">
+        <h2>Links Útiles</h2>
+        <ul>
+            <li><a href="https://www.ins-digital.com/pixel-pitch-que-es-importancia-eleccion/#:~:text=El%20p%C3%ADxel%20pitch%20se%20puede,muestra%20al%20usuario%20o%20espectador."target="_blank">Importancia del pitch</a></li>
+            <li><a href="https://resources.claroshop.com/medios-plazavip/mkt/6334774a7b8b0_dj6257600-1jpg.jpg">Mas informacion</a></li>
+        </ul>
+    </section>
+    <div class="tabla-productos">
+        <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1021604-0111V1.jpg" alt="Producto 1"></td>
+                <td><ul><li>Este producto cuenta con financiamiento apartir de una venta de  $200,000</li></ul></td>
+            </tr>
+            <tr>
+                <td><img src="https://www.basketballemotion.com/imagesarticulos/232022/grandes/zapatilla-nike-air-force-1-07-white-rugged-orange-0.webp" alt="Producto 2"></td>
+                <td><ul><li>Este producto cuenta con financiamiento apartir de una venta de  $450,000</li></ul></td>
+            </tr>
+            <tr>
+                <td><img src="https://http2.mlstatic.com/D_NQ_NP_2X_892002-MLM77414657462_072024-F.webp" alt="Producto 3"></td>
+                <td><ul><li>Este producto cuenta con financiamiento apartir de una venta de  $300,000</li></ul></td>
+            </tr>
+            <tr>
+                <td><img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/1028452-0100V1.jpg" alt="Producto 4"></td>
+                <td><ul><li>Este producto cuenta con financiamiento apartir de una venta de  $450,000</li></ul></td>
+            </tr>
+        </table>
+    </div>
+        <h2>Uso de comandos para acentos</h2>
+        <ol>
+            <li>&aacute; - á</li>
+            <li>&eacute; - é</li>
+            <li>&iacute; - í</li>
+            <li>&oacute; - ó</li>
+            <li>&uacute; - ú</li>
+            <li>&Aacute; - Á</li>
+            <li>&Eacute; - É</li>
+            <li>&Iacute; - Í</li>
+            <li>&Oacute; - Ó</li>
+            <li>&Uacute; - Ú</li>
+            <li>&ntilde; - ñ</li>
+            <li>&Ntilde; - Ñ</li>
+        </ol>
+    </section>
+</footer>
+
+    <footer class="footer">
+        <p>© 2025 venta de tenis03:35 p. m..</p>
+    </footer>
+    </body>
+</html>
